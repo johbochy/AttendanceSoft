@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Button?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            stylesheets="@../../styles/custom.css"
+            fx:controller="com.propscout.gui.controllers.courses.EditController"
+            prefHeight="400.0" prefWidth="600.0">
+
+
+    <TextField fx:id="aliasField" prefWidth="400.0" promptText="Course Alias" AnchorPane.leftAnchor="100.0"
+               AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="64.0"/>
+    <TextField fx:id="nameField" prefWidth="400.0" promptText="Course Name..." AnchorPane.leftAnchor="100.0"
+               AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="128.0"/>
+
+    <Button fx:id="updateCourseButton" text="Update Course" styleClass="primary-button"
+            AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="192.0"/>
+
+</AnchorPane>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import org.kordamp.ikonli.javafx.*?>
+
+<fx:root stylesheets="@../../styles/custom.css" type="ListCell" xmlns="http://javafx.com/javafx/10.0.2-internal"
+         xmlns:fx="http://javafx.com/fxml/1">
+
+    <graphic>
+        <HBox alignment="CENTER_LEFT" spacing="16.0">
+
+            <padding>
+                <Insets bottom="8" left="8" right="8" top="8"/>
+            </padding>
+            <ImageView fx:id="userAvatarImageView" fitHeight="64.0" fitWidth="64.0" pickOnBounds="true"
+                       preserveRatio="true">
+                <Image url="@../../images/avatar.png"/>
+            </ImageView>
+
+            <Label fx:id="nameLabel" prefWidth="160" text="Name"/>
+            <Label fx:id="usernameLabel" prefWidth="160" text="Username"/>
+            <Label fx:id="mobileLabel" prefWidth="160" text="Mobile"/>
+            <Label fx:id="emailLabel" prefWidth="160" text="Email"/>
+            <Label fx:id="roleLabel" prefWidth="160" text="Role"/>
+
+            <Button fx:id="editUserButton" contentDisplay="GRAPHIC_ONLY" styleClass="btn-info" text="Edit User">
+                <graphic>
+                    <FontIcon iconLiteral="fa-edit"/>
+                </graphic>
+            </Button>
+
+            <Button fx:id="deleteUserButton" contentDisplay="GRAPHIC_ONLY" styleClass="btn-danger"
+                    text="Delete User">
+                <graphic>
+                    <FontIcon iconLiteral="fa-trash-o"/>
+                </graphic>
+            </Button>
+        </HBox>
+    </graphic>
+
+</fx:root>

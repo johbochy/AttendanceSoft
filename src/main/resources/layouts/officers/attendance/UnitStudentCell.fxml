@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.HBox?>
+<fx:root stylesheets="@../../../styles/custom.css" type="ListCell" xmlns="http://javafx.com/javafx/10.0.2-internal"
+         xmlns:fx="http://javafx.com/fxml/1">
+
+    <graphic>
+        <HBox alignment="CENTER_LEFT" spacing="16.0">
+
+            <padding>
+                <Insets bottom="8" left="8" right="8" top="8"/>
+            </padding>
+            <Label fx:id="nameLabel" prefWidth="160" text="Name"/>
+            <Label fx:id="mobileLabel" prefWidth="160" text="Mobile"/>
+            <Label fx:id="courseLabel" prefWidth="160" text="Course"/>
+            <Label fx:id="yearLabel" prefWidth="160" text="Year"/>
+            <Label fx:id="semesterLabel" prefWidth="160" text="Semester"/>
+
+            <Button fx:id="markPresentButton" contentDisplay="TEXT_ONLY" styleClass="btn-info"
+                    text="Mark Present"/>
+
+            <Button fx:id="revokeAttendanceButton" contentDisplay="TEXT_ONLY" styleClass="btn-danger"
+                    text="Revoke Attendance"/>
+        </HBox>
+    </graphic>
+
+</fx:root>

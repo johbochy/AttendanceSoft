@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.HBox?>
+<fx:root stylesheets="@../../../styles/custom.css" type="ListCell" xmlns="http://javafx.com/javafx/10.0.2-internal"
+         xmlns:fx="http://javafx.com/fxml/1">
+
+    <graphic>
+        <HBox alignment="CENTER_LEFT" spacing="16.0">
+
+            <padding>
+                <Insets bottom="8" left="8" right="8" top="8"/>
+            </padding>
+            <Label fx:id="codeLabel" prefWidth="160" text="Code"/>
+            <Label fx:id="weekdayLabel" prefWidth="160" text="Week Day"/>
+            <Label fx:id="startTimeLabel" prefWidth="160" text="Start Time"/>
+            <Label fx:id="durationLabel" prefWidth="160" text="Duration"/>
+
+            <Button fx:id="takeAttendanceButton" contentDisplay="TEXT_ONLY" styleClass="btn-info"
+                    text="Take Attendance"/>
+        </HBox>
+    </graphic>
+
+</fx:root>

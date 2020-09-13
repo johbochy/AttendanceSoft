@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import org.kordamp.ikonli.javafx.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" stylesheets="@../../styles/custom.css"
+            xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.propscout.gui.controllers.courses.BrowseController">
+
+    <Button fx:id="addCourseButton" styleClass="primary-button" text="Add Course" AnchorPane.leftAnchor="8.0"
+            AnchorPane.topAnchor="8.0">
+        <graphic>
+            <FontIcon iconLiteral="fa-plus" styleClass="secondary-icon"/>
+        </graphic>
+    </Button>
+    <TableView fx:id="coursesTable" AnchorPane.bottomAnchor="8.0" AnchorPane.leftAnchor="8.0"
+               AnchorPane.rightAnchor="8.0" AnchorPane.topAnchor="48.0">
+        <columns>
+            <TableColumn fx:id="idCol" prefWidth="75.0" text="ID"/>
+            <TableColumn fx:id="aliasCol" prefWidth="75.0" text="Alias"/>
+            <TableColumn fx:id="nameCol" prefWidth="75.0" text="Name"/>
+        </columns>
+        <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY"/>
+        </columnResizePolicy>
+
+
+        <contextMenu>
+            <ContextMenu>
+                <items>
+                    <MenuItem fx:id="viewUnits" mnemonicParsing="false" text="View Units"/>
+                    <MenuItem fx:id="updateCourse" mnemonicParsing="false" text="Update"/>
+                    <MenuItem fx:id="deleteCourse" mnemonicParsing="false" text="Delete"/>
+                </items>
+            </ContextMenu>
+        </contextMenu>
+    </TableView>
+</AnchorPane>

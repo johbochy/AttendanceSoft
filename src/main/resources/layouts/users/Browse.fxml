@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            stylesheets="@../../styles/custom.css"
+            fx:controller="com.propscout.gui.controllers.users.BrowseController"
+            prefHeight="400.0" prefWidth="600.0">
+
+    <Button fx:id="addUserButton" text="Add User" styleClass="primary-button" AnchorPane.topAnchor="8"
+            AnchorPane.leftAnchor="8">
+        <graphic>
+            <FontIcon iconLiteral="fa-user-plus" styleClass="secondary-icon"/>
+        </graphic>
+    </Button>
+
+    <Button fx:id="refreshUsersButton" text="Refresh List" styleClass="primary-button" AnchorPane.topAnchor="8"
+            AnchorPane.rightAnchor="8">
+        <graphic>
+            <FontIcon iconLiteral="fa-refresh" styleClass="secondary-icon"/>
+        </graphic>
+    </Button>
+
+    <ListView fx:id="usersListView" AnchorPane.rightAnchor="8.0" AnchorPane.topAnchor="48.0" AnchorPane.leftAnchor="8.0"
+              AnchorPane.bottomAnchor="8.0"/>
+
+</AnchorPane>

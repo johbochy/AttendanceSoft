@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            stylesheets="@../../../styles/custom.css"
+            fx:controller="com.propscout.gui.controllers.officers.attendance.ViewLecturesController"
+            prefHeight="400.0" prefWidth="600.0">
+
+
+    <TableView fx:id="lecturesTable" AnchorPane.bottomAnchor="8.0" AnchorPane.leftAnchor="8.0"
+               AnchorPane.rightAnchor="8.0" AnchorPane.topAnchor="8.0">
+        <columns>
+            <TableColumn fx:id="lectureIdCol" prefWidth="75.0" text="Lecture ID"/>
+            <TableColumn fx:id="unitCodeCol" prefWidth="75.0" text="Unit Code"/>
+            <TableColumn fx:id="weekdayCol" prefWidth="75.0" text="Weekday"/>
+            <TableColumn fx:id="commencedCol" prefWidth="75.0" text="Commenced"/>
+            <TableColumn fx:id="durationCol" prefWidth="75.0" text="Duration"/>
+        </columns>
+        <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY"/>
+        </columnResizePolicy>
+
+        <contextMenu>
+            <ContextMenu>
+                <items>
+                    <MenuItem fx:id="viewAttendanceContextMenuItem" mnemonicParsing="false" text="View Attendance"/>
+                </items>
+            </ContextMenu>
+        </contextMenu>
+
+    </TableView>
+
+</AnchorPane>

@@ -1,0 +1,125 @@
+*{
+    -fx-primary-color: #9c27b0;
+    -fx-secondary-color: #ffeb3b;
+
+    -fx-danger-color: #ff0000;
+    -fx-info-color: #0000ff;
+
+    -fx-dark-color: #2a2e37;
+    -fx-light-color: #f4f4f4;
+
+    -fx-base: -fx-primary-color;
+
+
+}
+
+.secondary-icon{
+    -fx-fill: -fx-secondary-color;
+}
+
+.jfx-label{
+    -fx-text-fill: -fx-dark-color;
+}
+
+.primary-icon{
+    -fx-fill: -fx-primary-color;
+}
+
+.light-icon{
+    -fx-fill: -fx-light-color;
+}
+
+.auth-fields{
+    -jfx-focus-color: -fx-secondary-color;
+    -jfx-unfocus-color: -fx-light-color;
+    -fx-text-fill: -fx-secondary-color;
+    -fx-font-size: 12pt;
+}
+
+.primary-button{
+    -fx-background-color: -fx-primary-color;
+    -fx-text-fill: -fx-secondary-color;
+    -fx-border-color: -fx-secondary-color;
+    -fx-border-radius: 4px;
+    -fx-padding: 8px;
+    -fx-background-radius: 4px;
+}
+
+.jfx-check-box{
+    -fx-text-fill: -fx-secondary-color;
+}
+
+.sidebar{
+    -fx-background-color: -fx-primary-color;
+}
+
+.sidebar-button{
+    -fx-padding: 16px;
+    -fx-text-fill: -fx-light-color;
+}
+
+.sidebar-icon{
+    -fx-margin: 8px;
+    -fx-fill: -fx-secondary-color;
+}
+
+.brand-button{
+    -fx-font-weight: bold;
+    -fx-font-size: 10pt;
+}
+
+.brand-icon{
+    -fx-fill: -fx-secondary-color;
+}
+
+.separator{
+    -fx-background-color: -fx-secondary-color;
+}
+
+.title{
+    -fx-font-size: 20pt;
+    -fx-font-weight: bold;
+}
+
+
+.top-bar{
+    -fx-background-color: -fx-light-color;
+}
+
+.content{
+    -fx-background-color: #ffffff;
+}
+
+.images{
+    -fx-border-color: -fx-secondary-color;
+    -fx-background-color: -fx-light-color;
+}
+
+.btn-danger{
+    -fx-background-color: -fx-danger-color;
+    -fx-text-fill: #ffffff;
+}
+
+.btn-info{
+    -fx-background-color: -fx-info-color;
+    -fx-text-fill: #ffffff;
+}
+
+.primary-pane{
+    -fx-background: -fx-primary-color;
+    -fx-text-fill: -fx-secondary-color;
+}
+
+.dash-card{
+    -fx-background: -fx-primary-color;
+}
+
+.dash-card-figure{
+    -fx-font-weight: bold;
+    -fx-font-size: 12pt;
+}
+
+.dash-card-text{
+    -fx-font-weight: bold;
+    -fx-font-size: 10pt;
+}

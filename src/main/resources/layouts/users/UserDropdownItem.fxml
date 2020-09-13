@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ListCell?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Text?>
+<fx:root stylesheets="@../../styles/custom.css" type="ListCell" xmlns="http://javafx.com/javafx/10.0.2-internal"
+         xmlns:fx="http://javafx.com/fxml/1">
+
+    <graphic>
+        <HBox alignment="CENTER_LEFT" spacing="16.0">
+
+            <padding>
+                <Insets bottom="8" left="8" right="8" top="8"/>
+            </padding>
+            <Text fx:id="nameText" text="Name"/>
+            <Text fx:id="usernameText" text="Username"/>
+            <Text fx:id="mobileText" text="Mobile"/>
+            <Text fx:id="emailText" text="Email"/>
+        </HBox>
+    </graphic>
+
+</fx:root>

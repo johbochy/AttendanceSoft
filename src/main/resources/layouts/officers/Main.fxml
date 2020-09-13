@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import org.kordamp.ikonli.javafx.*?>
+
+<BorderPane prefHeight="600.0" prefWidth="900.0" stylesheets="@../../styles/custom.css"
+            xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.propscout.gui.controllers.officers.MainController">
+    <left>
+        <VBox prefWidth="200.0" styleClass="sidebar">
+            <Button fx:id="brandButton" contentDisplay="TOP" prefHeight="100" prefWidth="200.0"
+                    styleClass="brand-button" text="Attendance Software">
+                <graphic>
+                    <FontIcon iconLiteral="fa-graduation-cap" iconSize="48" styleClass="brand-icon"/>
+                </graphic>
+            </Button>
+            <Separator/>
+            <Button fx:id="dashboardButton" alignment="BASELINE_LEFT" prefWidth="200.0" styleClass="sidebar-button"
+                    text="Dashboard" VBox.vgrow="ALWAYS">
+                <graphic>
+                    <FontIcon iconLiteral="fa-home" iconSize="16" styleClass="sidebar-icon" text=""/>
+                </graphic>
+            </Button>
+            <Separator/>
+            <Button fx:id="viewAttendanceButton" alignment="BASELINE_LEFT" prefWidth="200.0" styleClass="sidebar-button"
+                    text="View Attendance" VBox.vgrow="ALWAYS">
+                <graphic>
+                    <FontIcon iconLiteral="fa-users" iconSize="16" styleClass="sidebar-icon"/>
+                </graphic>
+            </Button>
+            <Separator/>
+            <Button fx:id="takeAttendanceButton" alignment="BASELINE_LEFT" prefWidth="200.0" styleClass="sidebar-button"
+                    text="Take Attendance" VBox.vgrow="ALWAYS">
+                <graphic>
+                    <FontIcon iconLiteral="fa-calendar-check-o" iconSize="16" styleClass="sidebar-icon"/>
+                </graphic>
+            </Button>
+            <Separator/>
+            <Button fx:id="viewUnitsButton" alignment="BASELINE_LEFT" prefWidth="200.0" styleClass="sidebar-button"
+                    text="View Units" VBox.vgrow="ALWAYS">
+                <graphic>
+                    <FontIcon iconLiteral="fa-list-alt" iconSize="16" styleClass="sidebar-icon"/>
+                </graphic>
+            </Button>
+            <Separator/>
+            <Button fx:id="updateAccountButton" alignment="BASELINE_LEFT" prefWidth="200.0" styleClass="sidebar-button"
+                    text="Updated Account" VBox.vgrow="ALWAYS">
+                <graphic>
+                    <FontIcon iconLiteral="fa-cog" iconSize="16" styleClass="sidebar-icon"/>
+                </graphic>
+            </Button>
+            <Separator/>
+            <Button fx:id="signOutButton" alignment="BASELINE_LEFT" prefWidth="200.0" styleClass="sidebar-button"
+                    text="Logout" VBox.vgrow="ALWAYS">
+                <graphic>
+                    <FontIcon iconLiteral="fa-sign-out" iconSize="16" styleClass="sidebar-icon"/>
+                </graphic>
+            </Button>
+        </VBox>
+    </left>
+
+    <center>
+        <AnchorPane>
+            <VBox alignment="TOP_CENTER" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+                  AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                <AnchorPane prefHeight="100.0" styleClass="top-bar">
+                    <HBox alignment="CENTER_LEFT" AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0"
+                          AnchorPane.topAnchor="0">
+
+                        <padding>
+                            <Insets bottom="16" left="16" right="16"/>
+                        </padding>
+                        <Text fx:id="titleText" styleClass="title" text="Take Attendance"/>
+                    </HBox>
+                </AnchorPane>
+                <Separator/>
+
+                <StackPane fx:id="contentPane" styleClass="content" VBox.vgrow="ALWAYS"/>
+            </VBox>
+        </AnchorPane>
+    </center>
+</BorderPane>
